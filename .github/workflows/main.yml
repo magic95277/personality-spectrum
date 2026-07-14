@@ -36,7 +36,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: 安装依赖
-        run: pnpm install --frozen-lockfile
+        run: pnpm install --frozen-lockfile --ignore-scripts
 
       - name: 打包网站
         run: pnpm run build:pages
